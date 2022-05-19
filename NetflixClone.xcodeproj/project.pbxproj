@@ -15,6 +15,7 @@
 		F67E762328369AED007D10F9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F67E762228369AED007D10F9 /* SDWebImageMapKit */; };
 		F67E76252836AB4A007D10F9 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E76242836AB4A007D10F9 /* TitleTableViewCell.swift */; };
 		F67E76272836AD4B007D10F9 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E76262836AD4B007D10F9 /* TitleViewModel.swift */; };
+		F67E76292836CAA5007D10F9 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E76282836CAA5007D10F9 /* SearchResultsViewController.swift */; };
 		F68A4AC22835E7BB00954EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68A4AC12835E7BB00954EF1 /* AppDelegate.swift */; };
 		F68A4AC42835E7BB00954EF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68A4AC32835E7BB00954EF1 /* SceneDelegate.swift */; };
 		F68A4AC62835E7BB00954EF1 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68A4AC52835E7BB00954EF1 /* MainTabBarViewController.swift */; };
@@ -35,6 +36,7 @@
 		F67E761D283696CB007D10F9 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		F67E76242836AB4A007D10F9 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		F67E76262836AD4B007D10F9 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		F67E76282836CAA5007D10F9 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		F68A4ABE2835E7BB00954EF1 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68A4AC12835E7BB00954EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F68A4AC32835E7BB00954EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F67E762A2836CAE1007D10F9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F68A4AD92835EAA800954EF1 /* UpcomingViewController.swift */,
+				F68A4ADB2835EAC800954EF1 /* DowndloadsViewController.swift */,
+				F68A4AD72835EA8300954EF1 /* SearchViewController.swift */,
+				F68A4AD52835EA6D00954EF1 /* HomeViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F67E762B2836CAFB007D10F9 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F67E76282836CAA5007D10F9 /* SearchResultsViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		F68A4AB52835E7BA00954EF1 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +122,8 @@
 		F68A4ADD2835EADE00954EF1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F68A4AD92835EAA800954EF1 /* UpcomingViewController.swift */,
-				F68A4AD72835EA8300954EF1 /* SearchViewController.swift */,
-				F68A4ADB2835EAC800954EF1 /* DowndloadsViewController.swift */,
-				F68A4AD52835EA6D00954EF1 /* HomeViewController.swift */,
+				F67E762B2836CAFB007D10F9 /* General */,
+				F67E762A2836CAE1007D10F9 /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +257,7 @@
 				F68A4AE62835F5BD00954EF1 /* HeroHeaderUIView.swift in Sources */,
 				F68A4ADC2835EAC800954EF1 /* DowndloadsViewController.swift in Sources */,
 				F68A4AC22835E7BB00954EF1 /* AppDelegate.swift in Sources */,
+				F67E76292836CAA5007D10F9 /* SearchResultsViewController.swift in Sources */,
 				F67E761A28368D31007D10F9 /* Extensions.swift in Sources */,
 				F68A4AC42835E7BB00954EF1 /* SceneDelegate.swift in Sources */,
 				F68A4AD62835EA6D00954EF1 /* HomeViewController.swift in Sources */,
