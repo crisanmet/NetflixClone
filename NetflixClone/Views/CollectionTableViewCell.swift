@@ -51,6 +51,10 @@ class CollectionTableViewCell: UITableViewCell {
             self?.collectionView.reloadData()
         }
     }
+    
+    private func downloadTitleAt(indexPath: IndexPath ){
+        print("downloading \(titles[indexPath.row].original_title)")
+    }
 
 }
 
@@ -88,5 +92,15 @@ extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDat
                 print(error)
             }
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        let config = UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { _ in
+            let downloadAction = UIAction(title: "Download", image: nil, identifier: nil, discoverabilityTitle: nil, state: .off) { _ in
+                self.downloadTitleAt(indexPath: indexPath)
+            }
+            return UIMenu(title: "", subtitle: "", image: nil, identifier: nil, options: .displayInline, children: [downloadAction])
+        }
+       return config
     }
 }
